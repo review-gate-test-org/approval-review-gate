@@ -28,4 +28,10 @@ class TodoServiceTest {
     assertTrue(service.remove("ship it"));
     assertTrue(service.list().isEmpty());
   }
+
+  @Test
+  void containsAddedTodo() {
+    service.add("ship it");
+    assertTrue(service.contains("ship it"));
+  }
 }
