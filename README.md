@@ -69,3 +69,12 @@ _Pending: PRs not yet evaluated._
   drift from GitHub's behaviour is a bug we own.
 - **The PR UI no longer says "code owner review required".** The built-in rule is off, so GitHub's
   merge box only shows a pending `review-gate` check. The reason is in the status description.
+
+## Backend
+
+`TodoService` keeps todos in memory:
+
+- `add(todo)` stores a stripped, non-blank todo.
+- `list()` returns an unmodifiable copy.
+- `contains(todo)` checks whether a todo is stored.
+- `remove(todo)` removes a todo and reports whether it was there.
