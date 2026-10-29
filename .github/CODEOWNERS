@@ -1,0 +1,4 @@
+# Catch-all: anything not matched below (for example README.md) needs a human.
+*         @venetrius @JacobiCamunda
+/backend/ @review-gate-test-org/backend
+/client/  @review-gate-test-org/frontend
